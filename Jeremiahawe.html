@@ -1,13 +1,21 @@
+  
 <DOCUTYPE! html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
+.tab {overflow: hidden;border: 1px solid green;background-color: orange;}
+.tab button{background-color: inherit;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;transition: 0.3s;font-size: 17px;}
+.tab button.active{background-color: #ccc;}
+.tabcontent {display: none;padding: 6px 12px;border: 1px solid #ccc;border-top: none;}
 .center {margin:auto;width:69%;border:3px solid blue;padding:303px;text-align:center;}
 .highlight{background-image:green;border-radius:6px;padding:3px 6px;}
 </style>
 </head>
-<button><a href="#about">About</a></button>
+<div class="tab">
+  <button><a href="#about">About</a></button>
+  <button><a href="#jeremiah!">My Webpage</button>
+</div>
 <body>
 <div class="center">	
 <body style="background:orange;">
@@ -28,5 +36,6 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HEVbJyRwWBo"frameborder="0"left bottom;></iframe><p><font color="indigo">This video is about me practicing with people someone I know from school. I made this video 1 year ago also. This is my favorite video so far.</font><p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3wC3uKXJXSs"frameborder="0"left bottom;></iframe><p><font color="blue">This video is of me playing a sniper practice game mode called one shot. I made this 2 months ago.</font><p>
 <style>
+<script>function openCity(evt, cityName) {var i, tabcontent, tablinks;tabcontent = document.getElementsByClassName("tabcontent");for (i = 0; i < tabcontent.length; i++) {tabcontent[i].style.display = "none";}tablinks = document.getElementsByClassName("tablinks");for (i = 0; i < tablinks.length; i++) {tablinks[i].className = tablinks[i].className.replace("active", "");}document.getElementById(cityName).style.display = "block";evt.currentTarget.className +="active";}</script>
 </body>
 </html>
